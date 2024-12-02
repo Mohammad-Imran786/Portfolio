@@ -88,14 +88,13 @@ const Experience = ({ id }) => {
   };
 
   return (
-    <div id={id} ref={targetRef} className={`relative my-60 max-md:my-28 px-12 pt-7 max-w-6xl mx-auto transition-all duration-1000 ${
-            isVisible ? 'opacity-100 animate-fadeInUp' : 'opacity-0' }`}>
+    <div id={id} ref={targetRef} className={`relative my-60 max-md:my-28 px-12 pt-7 max-w-6xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 animate-fadeInUp' : 'opacity-0'}`}>
       <h2 className="text-2xl sm:text-4xl font-[ubuntu] font-medium text-center mb-8">
         Work Experience
       </h2>
 
       <div className="relative max-w-md sm:max-w-2xl mx-auto">
-        
+
         <button
           onClick={prevSlide}
           className="absolute -left-12 top-1/2 -translate-y-3/4 z-20 p-2 rounded-full hover:bg-white transition-colors duration-200"

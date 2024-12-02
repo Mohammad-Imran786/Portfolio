@@ -5,7 +5,6 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  // Handle scroll effect
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -27,7 +26,7 @@ const Navbar = () => {
   const scrollWithOffset = (elem) => {
     const yCoordinate = elem.getBoundingClientRect().top + window.pageYOffset;
     const yOffset = -80;
-    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
   };
 
   const navItems = [
@@ -38,13 +37,12 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`fixed top-0 w-full h-16 z-50 transition-all duration-300 ${
-      isScrolled 
+    <nav className={`fixed top-0 w-full h-16 z-50 transition-all duration-300 ${isScrolled
         ? 'bg-white/80 backdrop-blur-md'
         : 'bg-transparent'
-    }`}>
+      }`}>
       <div className="max-w-6xl mx-auto h-full flex items-center justify-between px-4">
-        {/* Logo */}
+
         <div className="flex justify-center items-center">
           <HashLink smooth to="#top" scroll={scrollWithOffset}>
             <img
@@ -55,12 +53,11 @@ const Navbar = () => {
           </HashLink>
         </div>
 
-        {/* Desktop Navigation Links */}
         <ul className="mt-2 hidden md:flex gap-16 text-zinc-400">
           {navItems.map((item) => (
             <li key={item.to}>
-              <HashLink 
-                smooth 
+              <HashLink
+                smooth
                 to={item.to}
                 scroll={scrollWithOffset}
                 className="hover:text-zinc-600 cursor-pointer transition-colors duration-300 ease-in-out"
@@ -71,7 +68,6 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Contact Me Button */}
         <div className="flex items-center gap-4">
           <HashLink
             smooth
@@ -82,9 +78,8 @@ const Navbar = () => {
             Contact Me
           </HashLink>
 
-          {/* Hamburger Menu (for small screens) */}
-          <button 
-            className="md:hidden flex flex-col gap-1 p-1 cursor-pointer" 
+          <button
+            className="md:hidden flex flex-col gap-1 p-1 cursor-pointer"
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >
@@ -94,13 +89,11 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Mobile Sliding Menu */}
         <div
-          className={`absolute top-0 right-0 bg-black/80 backdrop-blur-sm h-[calc(100vh)] w-3/4 transform ${
-            isMenuOpen ? 'translate-x-0' : 'translate-x-full'
-          } transition-transform duration-300 ease-in-out z-50`}
+          className={`absolute top-0 right-0 bg-black/80 backdrop-blur-sm h-[calc(100vh)] w-3/4 transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+            } transition-transform duration-300 ease-in-out z-50`}
         >
-          <button 
+          <button
             className="absolute top-4 right-4 text-white text-3xl p-2"
             onClick={toggleMenu}
             aria-label="Close menu"
@@ -110,8 +103,8 @@ const Navbar = () => {
           <ul className="flex flex-col items-center justify-center h-full text-white font-[ubuntu] text-xl gap-8">
             {navItems.map((item) => (
               <li key={item.to}>
-                <HashLink 
-                  smooth 
+                <HashLink
+                  smooth
                   to={item.to}
                   scroll={scrollWithOffset}
                   className="hover:text-green-600 cursor-pointer transition-colors duration-300"
@@ -128,4 +121,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar

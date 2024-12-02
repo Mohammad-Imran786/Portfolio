@@ -1,11 +1,11 @@
-import React, { useRef, useEffect, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import useVisibility from '../../Hooks/useVisibility'
 
-const Projects = ({id}) => {
+const Projects = ({ id }) => {
     const imgRef = useRef(null)
     const containerRef = useRef(null)
-    
+
     const [targetRef, isVisible] = useVisibility(0.4)
     const [hoveredProject, setHoveredProject] = useState(null)
 
@@ -14,7 +14,6 @@ const Projects = ({id}) => {
         targetRef.current = elem;
     }
 
-    // Define project details centrally for easy maintenance
     const projectDetails = [
         {
             title: "CLOUD IDE",
@@ -41,7 +40,7 @@ const Projects = ({id}) => {
         if (imgDiv) {
             imgDiv.style.backgroundImage = `url(${project.image})`;
             imgDiv.style.opacity = '1';
-            imgDiv.style.visibility = 'visible'; // Ensure the image is visible
+            imgDiv.style.visibility = 'visible';
             setHoveredProject(project);
         }
     };
@@ -50,38 +49,37 @@ const Projects = ({id}) => {
         const imgDiv = imgRef.current;
         if (imgDiv) {
             imgDiv.style.opacity = '0';
-            imgDiv.style.visibility = 'hidden'; // Hide the image
+            imgDiv.style.visibility = 'hidden';
             setHoveredProject(null);
         }
     };
 
     return (
         <>
-            <div 
-                ref={imgRef} 
+            <div
+                ref={imgRef}
                 className="w-[25vw] h-[30vw] bg-[80%] bg-cover bg-center rounded-xl fixed left-[51%] top-[20%] z-50 
-                    transition-all duration-300 ease-in-out opacity-0 invisible" // Add invisible class
+                    transition-all duration-300 ease-in-out opacity-0 invisible"
             ></div>
-            <div 
-                id={id} 
-                ref={combinedRef} 
-                className={`max-w-6xl mx-auto my-44 max-md:my-28 transition-all duration-1000 ${
-                    isVisible ? 'opacity-100 animate-fadeInUp' : 'opacity-0' 
-                }`}
+            <div
+                id={id}
+                ref={combinedRef}
+                className={`max-w-6xl mx-auto my-44 max-md:my-28 transition-all duration-1000 ${isVisible ? 'opacity-100 animate-fadeInUp' : 'opacity-0'
+                    }`}
             >
                 <li className="py-8 px-10 border-b-2 border-slate-100 text-slate-400 font-light">MY PROJECT GALLERY</li>
-                
+
                 {projectDetails.map((project, index) => (
-                    <div 
-                        key={index} 
+                    <div
+                        key={index}
                         className="group"
                         onMouseEnter={() => handleMouseEnter(project)}
                         onMouseLeave={handleMouseLeave}
                     >
-                        <Link 
+                        <Link
                             to={project.githubLink}
                             target="_blank"
-                            className="block relative w-full h-40 border-b-2 border-slate-100 flex items-center px-10 overflow-hidden" 
+                            className="block relative w-full h-40 border-b-2 border-slate-100 flex items-center px-10 overflow-hidden"
                         >
                             <div className="absolute left-0 w-full h-full bg-yellow-100 -translate-y-full transition-all duration-300 ease-in-out group-hover:translate-y-0 transition-transform duration-300 overflow-hidden">
                             </div>
