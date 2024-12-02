@@ -11,28 +11,28 @@ const SkillItem = ({ image, name }) => (
 
 const Skills = ({ id }) => {
     const skills1 = [
-        { src: "/js-logo.png", name: "JavaScript" },
-        { src: "/cpp-logo.png", name: "C++" },
-        { src: "/reactjs-logo.png", name: "React.js" },
-        { src: "/html5-logo.png", name: "HTML5" },
-        { src: "/tailwindcss-logo.png", name: "Tailwind CSS" },
-        { src: "/css3-logo.png", name: "CSS3" }
+        { src: "js-logo.png", name: "JavaScript" },
+        { src: "cpp-logo.png", name: "C++" },
+        { src: "reactjs-logo.png", name: "React.js" },
+        { src: "html5-logo.png", name: "HTML5" },
+        { src: "tailwindcss-logo.png", name: "Tailwind CSS" },
+        { src: "css3-logo.png", name: "CSS3" }
     ]
     const skills2 = [
-        { src: "/oops-logo.png", name: "OOPs" },
-        { src: "/cn-logo.png", name: "Computer Networks" },
-        { src: "/algorithm-logo.png", name: "DSA" },
-        { src: "/os-logo.png", name: "Operating Systems" },
-        { src: "/api-logo.png", name: "APIs" },
-        { src: "/agile-logo.png", name: "Agile Methodology" }
+        { src: "oops-logo.png", name: "OOPs" },
+        { src: "cn-logo.png", name: "Computer Networks" },
+        { src: "algorithm-logo.png", name: "DSA" },
+        { src: "os-logo.png", name: "Operating Systems" },
+        { src: "api-logo.png", name: "APIs" },
+        { src: "agile-logo.png", name: "Agile Methodology" }
     ]
     const skills3 = [
-        { src: "/sql-logo.png", name: "SQL" },
-        { src: "/nodejs-logo.png", name: "Node.js" },
-        { src: "/git-logo.png", name: "Git" },
-        { src: "/mongodb-logo.png", name: "MongoDB" },
-        { src: "/github-logo.png", name: "Github" },
-        { src: "/express-logo.png", name: "Express.js" },
+        { src: "sql-logo.png", name: "SQL" },
+        { src: "nodejs-logo.png", name: "Node.js" },
+        { src: "git-logo.png", name: "Git" },
+        { src: "mongodb-logo.png", name: "MongoDB" },
+        { src: "github-logo.png", name: "Github" },
+        { src: "express-logo.png", name: "Express.js" },
     ]
 
     const [targetRef, isVisible] = useVisibility(0.5)
