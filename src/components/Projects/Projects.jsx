@@ -31,7 +31,7 @@ const Projects = ({ id }) => {
             title: "PORTFOLIO",
             type: "Front-End",
             image: "https://images.unsplash.com/photo-1624225322900-690eab653586?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHdlYiUyMGRldmVsb3BlcnxlbnwwfHwwfHx8MA%3D%3D",
-            githubLink: "https://github.com/yourusername/portfolio-project"
+            githubLink: "https://mohammad-imran786.github.io/Portfolio/"
         }
     ];
 
