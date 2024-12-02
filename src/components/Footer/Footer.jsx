@@ -17,7 +17,7 @@ const Footer = () => {
 
     return <div className="mt-6 mb-16 flex flex-col gap-4 items-center">
         <div className="md:hidden flex text-zinc-500 gap-8 sm-mx:gap-6">{socialIcons}</div>
-        <div className="text-zinc-400 text-xs sm:text-base flex items-center">Designed & Developed with ❤️. Mohammad Imran &copy; {new Date().getFullYear()} | All Rights Reserved.</div>
+        <div className="text-zinc-400 text-xs sm:text-base flex items-center">Designed & Developed with ❤️. &copy; {new Date().getFullYear()} | All Rights Reserved.</div>
     </div>
 }
 export default Footer

@@ -14,7 +14,7 @@ const Hero = () => {
 
     return (
         <div className="relative pt-16 w-full min-h-screen">
-            <div className="absolute">
+            <div className="absolute hidden sm:flex">
                 <Particle />
             </div>
             <div className="relative z-10 min-h-screen w-full flex flex-col items-center justify-center px-4">
