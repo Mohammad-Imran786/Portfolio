@@ -4,10 +4,8 @@ import Navbar from './components/Navbar/Navbar'
 import Skills from './components/Skills/Skills'
 import Projects from './components/Projects/Projects'
 import About from './components/About/About'
-import Social from './components/Social/Social'
 import Experience from './components/Experience/Experience'
 import Hero from './components/Hero/Hero'
-import Mail from './components/Email/Email'
 import Contact from './components/Contact/Contact'
 import { BrowserRouter } from 'react-router-dom'
 import Footer from './components/Footer/Footer'
@@ -28,8 +26,6 @@ const App = () => {
       <Experience id="experience"/>
       <Contact id="contact"/> 
       <Footer />
-      <Social />
-      <Mail />
     </BrowserRouter>
       
     </>

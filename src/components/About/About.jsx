@@ -2,11 +2,14 @@ import React, { useState, useEffect, useRef } from 'react'
 import useVisibility from '../../Hooks/useVisibility'
 
 const About = ({ id }) => {
+    
     const [colorChangeIndex, setColorChangeIndex] = useState(0)
 
-    const text = ` Hi, I am Mohammad Imran. An enthusiastic Software Engineer and Full Stack Web Developer specializing in the MERN stack. 
-    With a year of experience, I excel at transforming challenges into elegant solutions. 
-    My strong C++ skills enhance my problem-solving abilities, allowing me to tackle issues from various angles.`;
+    const text = ` Hi, I'm Mohammad Imran. A self-taught C++ and Full Stack Developer 
+                   specializing in the MERN stack. 
+                   With a year of experience, I excel at transforming challenges 
+                   into elegant solutions. My strong C++ skills enhance my 
+                   problem-solving abilities, allowing me to tackle issues from various angles.`;
 
     const aboutRef = useRef(null);
 
@@ -40,11 +43,12 @@ const About = ({ id }) => {
         if (aboutRef.current) {
             aboutRef.current.style.transition = '3s ease-in-out';
         }
-    };
+    }
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
         window.addEventListener('scroll', handleTransitionSpeed);
+
         return () => {
             window.removeEventListener('scroll', handleScroll);
             window.removeEventListener('scroll', handleTransitionSpeed);

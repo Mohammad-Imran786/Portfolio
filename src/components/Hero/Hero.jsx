@@ -3,6 +3,8 @@ import Particle from '../Particle/Particle'
 import { IconEye, IconMapPin, IconBriefcase } from '@tabler/icons-react'
 import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
+import Social from '../Social/Social'
+import Mail from '../Email/Email'
 
 const Hero = () => {
 
@@ -28,7 +30,7 @@ const Hero = () => {
                     <p className="text-lg text-slate-400 max-w-2xl mx-auto mb-6">
                         I craft robust web applications with modern technologies.
                         Specializing in Front-End Development. Expertise in
-                        C++ and React. On the way to become a Full-stack Developer.
+                        React and C++. On the way to become a Full-stack Developer.
                     </p>
                 </div>
 
@@ -61,6 +63,10 @@ const Hero = () => {
                             </h4>
                         </div>
                     </div>
+                </div>
+                <div>
+                    <Social />
+                    <Mail />
                 </div>
             </div>
         </div>

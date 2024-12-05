@@ -48,12 +48,12 @@ const Navbar = () => {
             <img
               src="My-logo.jpg"
               alt="Mohammad Imran"
-              className="mt-1 rounded-full w-12 h-12 object-cover object-center border-4 border-white shadow-custom cursor-pointer hover:border-green-300 hover:scale-105 transition-all duration-300 ease-in-out"
+              className="rounded-full w-12 h-12 object-cover object-center border-4 border-white shadow-custom cursor-pointer hover:border-green-300 hover:scale-105 transition-all duration-300 ease-in-out"
             />
           </HashLink>
         </div>
 
-        <ul className="mt-2 hidden md:flex gap-16 text-zinc-400">
+        <ul className="hidden md:flex gap-16 text-zinc-400">
           {navItems.map((item) => (
             <li key={item.to}>
               <HashLink
@@ -107,7 +107,7 @@ const Navbar = () => {
                   smooth
                   to={item.to}
                   scroll={scrollWithOffset}
-                  className="hover:text-green-600 cursor-pointer transition-colors duration-300"
+                  className="hover:text-green-500 cursor-pointer transition-colors duration-300"
                   onClick={toggleMenu}
                 >
                   {item.label}
