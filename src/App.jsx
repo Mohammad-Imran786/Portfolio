@@ -9,25 +9,22 @@ import Hero from './components/Hero/Hero'
 import Contact from './components/Contact/Contact'
 import { BrowserRouter } from 'react-router-dom'
 import Footer from './components/Footer/Footer'
-import CustomCursor from './components/CustomCursor/CustomCursor'
 
 
 const App = () => {
 
   return (
     <>
-    <BrowserRouter >
-    {/* <CustomCursor /> */}
-    <Navbar />
-      <Hero />
-      <About id="about"/>
-      <Skills id="skills"/>
-      <Projects id="projects"/>
-      <Experience id="experience"/>
-      <Contact id="contact"/> 
-      <Footer />
-    </BrowserRouter>
-      
+      <BrowserRouter >
+        <Navbar />
+        <Hero />
+        <About id="about" />
+        <Skills id="skills" />
+        <Projects id="projects" />
+        <Experience id="experience" />
+        <Contact id="contact" />
+        <Footer />
+      </BrowserRouter>
     </>
   )
 }
