@@ -5,9 +5,9 @@ const About = ({ id }) => {
     
     const [colorChangeIndex, setColorChangeIndex] = useState(0)
 
-    const text = ` Hi, I'm Mohammad Imran. A self-taught C++ and Front-End Developer 
-                   who turned a love for problem-solving into a career. 
-                   With a year of experience, I love building scalable apps with React.js & Tailwind CSS.`;
+    const text = ` Hi, I'm Mohammad Imran, a self-taught C++ and Front-End Developer 
+                   specializing in React.js and Tailwind CSS.
+                   Having a year of experience, I excel at problem-solving and creating elegant and scalable solutions.`;
 
     const aboutRef = useRef(null);
 
