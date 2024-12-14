@@ -10,16 +10,16 @@ const useVisibility = (threshold = 0.4) => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setIsVisible(true); // Element is 40% visible
+            setIsVisible(true);
           } else {
-            setIsVisible(false); // Element is not visible
+            setIsVisible(false); 
           }
         });
       },
       {
-        root: null, // Use the viewport as the root
+        root: null, 
         rootMargin: '0px',
-        threshold: threshold, // Trigger visibility at specified threshold (default 0.4)
+        threshold: threshold,
       }
     );
 
