@@ -15,7 +15,7 @@ const Hero = () => {
     }
 
     return (
-        <div className="relative pt-16 w-full min-h-screen">
+        <div className="relative md:pt-16 w-full min-h-screen">
             <div className="absolute hidden sm:flex">
                 <Particle />
             </div>
@@ -41,7 +41,7 @@ const Hero = () => {
                         </button>
                     </HashLink>
 
-                    <Link to="https://drive.google.com/file/d/1QBgT--i9vDVbbtNoDqBdbpUxH44FdAv1/view?usp=sharing" target="_blank">
+                    <Link to="https://drive.google.com/file/d/1NL2rn5QTwS3eihPZSsJ6TSwBtTnYhbbk/view?usp=sharing" target="_blank">
                         <button className="px-6 py-2.5 border-2 border-zinc-500 text-gray-800 rounded-lg hover:bg-zinc-50 transition-colors flex items-center justify-center gap-2">
                             <IconEye />
                             My Resume

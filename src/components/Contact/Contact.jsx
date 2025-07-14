@@ -5,6 +5,7 @@ import useVisibility from '../../Hooks/useVisibility'
 
 
 const Toast = ({ type, message, onClose }) => {
+  
   useEffect(() => {
     const timer = setTimeout(onClose, 3000);
     return () => clearTimeout(timer);
@@ -270,6 +271,7 @@ const Contact = ({ id }) => {
                 </label>
                 <div className="mt-2.5">
                   <textarea
+                    style={{resize: 'none'}}
                     {...register('message', {
                       required: 'Message is required',
                       minLength: {
