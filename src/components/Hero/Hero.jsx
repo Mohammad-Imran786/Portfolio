@@ -41,7 +41,7 @@ const Hero = () => {
                         </button>
                     </HashLink>
 
-                    <Link to="https://drive.google.com/file/d/1NL2rn5QTwS3eihPZSsJ6TSwBtTnYhbbk/view?usp=sharing" target="_blank">
+                    <Link to="https://drive.google.com/file/d/1CPVR8xUU2Ng6G9j1tcWMEBOxs3DyjZ9v/view?usp=sharing" target="_blank">
                         <button className="px-6 py-2.5 border-2 border-zinc-500 text-gray-800 rounded-lg hover:bg-zinc-50 transition-colors flex items-center justify-center gap-2">
                             <IconEye />
                             My Resume
