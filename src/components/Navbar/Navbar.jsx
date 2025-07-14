@@ -73,7 +73,7 @@ const Navbar = () => {
             smooth
             to="#contact"
             scroll={scrollWithOffset}
-            className="bg-blue-600 hover:bg-blue-700 px-4 py-2 md:px-5 md:py-2 rounded-full text-white hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer text-sm md:text-base"
+            className="bg-blue-400 hover:bg-blue-500 px-4 py-2 md:px-5 md:py-2 rounded-full text-white hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer text-sm md:text-base"
           >
             Contact Me
           </HashLink>
