@@ -21,7 +21,7 @@ const Hero = () => {
             </div>
             <div className="relative z-10 min-h-screen w-full flex flex-col items-center justify-center px-4">
                 <div className="text-center mb-8">
-                    <h1 className="text-4xl md:text-6xl sm:text-5xl font-[ubuntu] font-bold text-zinc-700 mb-4">
+                    <h1 className="text-4xl md:text-6xl sm:text-5xl font-[lexend] text-zinc-700 mb-4">
                         Bringing Ideas to Life with
                         <br /> Pixel-perfect <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-pink-500 via-blue-400 via-purple-500 to-pink-400 inline-block animate-rainbow bg-[size:200%_auto]">Front-End</span> &
                         <br />

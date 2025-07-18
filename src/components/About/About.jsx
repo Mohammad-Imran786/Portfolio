@@ -5,7 +5,7 @@ const About = ({ id }) => {
     
     const [colorChangeIndex, setColorChangeIndex] = useState(0)
 
-    const text = ` Hi, I'm Mohammad Imran, a self-taught C++ and Front-End Developer specializing in React.js and Tailwind CSS. With a year of experience, I excel at problem-solving.`;
+    const text = ` Hi, I'm Mohammad Imran, a self-taught C++ and Front-End Developer specializing in React.js and Tailwind CSS. With 1+ years of experience, I excel at problem-solving.`;
 
     const aboutRef = useRef(null);
 
@@ -56,7 +56,7 @@ const About = ({ id }) => {
     return (
         <div id={id} ref={targetRef} className={`my-28 max-md:my-12 p-12 max-md:p-4 max-w-6xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 animate-fadeInUp' : 'opacity-0'}`}>
             <h1 className="text-7xl max-md:text-5xl font-bold text-slate-100 mb-5">About Me</h1>
-            <p className="text-4xl max-md:text-2xl text-justify font-[ubuntu] font-semibold leading-snug" ref={aboutRef}>
+            <p className="text-4xl max-md:text-2xl text-justify font-[lexend] font-semibold leading-snug" ref={aboutRef}>
                 <span className="inline-block animate-wave">👋</span>
                 {text.split('').map((word, index) => (
                     <span
